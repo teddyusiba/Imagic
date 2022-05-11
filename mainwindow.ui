@@ -1,0 +1,719 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1154</width>
+    <height>744</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <widget class="QStackedWidget" name="stackedWidget">
+    <property name="geometry">
+     <rect>
+      <x>140</x>
+      <y>30</y>
+      <width>921</width>
+      <height>581</height>
+     </rect>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::Box</enum>
+    </property>
+    <property name="currentIndex">
+     <number>1</number>
+    </property>
+    <widget class="QWidget" name="page_0">
+     <widget class="QLabel" name="label_4">
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>-10</y>
+        <width>211</width>
+        <height>101</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:14pt; font-weight:600;&quot;&gt;欢迎使用Imagic！&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_5">
+      <property name="geometry">
+       <rect>
+        <x>110</x>
+        <y>100</y>
+        <width>651</width>
+        <height>171</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">image: url(:/pic/启动.png);</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_6">
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>270</y>
+        <width>431</width>
+        <height>101</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-family:'Open Sans,Clear Sans,Helvetica Neue,Helvetica,Arial,Segoe UI Emoji,sans-serif'; font-size:x-large; font-weight:600; color:#333333;&quot;&gt;简单介绍&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_7">
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>350</y>
+        <width>871</width>
+        <height>171</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-family:'Open Sans,Clear Sans,Helvetica Neue,Helvetica,Arial,Segoe UI Emoji,sans-serif'; font-size:16px; color:#333333;&quot;&gt;一直想在Github上做一个项目，借着图像处理算法学习和毕设的契机，用QT开发了用于测试和研究图像处理的UI界面。&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot; font-family:'Open Sans,Clear Sans,Helvetica Neue,Helvetica,Arial,Segoe UI Emoji,sans-serif'; font-size:16px; color:#333333;&quot;&gt;目前包含的主要算法为基于截断核范数的图像恢复算法，后续会不断加入新的内容。欢迎大家讨论学习！&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot; font-family:'Open Sans,Clear Sans,Helvetica Neue,Helvetica,Arial,Segoe UI Emoji,sans-serif'; font-size:16px; color:#333333;&quot;&gt;打开帮助以查阅帮助文档！&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="page_1">
+     <widget class="QFrame" name="frame_2">
+      <property name="geometry">
+       <rect>
+        <x>160</x>
+        <y>20</y>
+        <width>671</width>
+        <height>391</height>
+       </rect>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::Box</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Plain</enum>
+      </property>
+      <widget class="QLabel" name="label_input_1">
+       <property name="geometry">
+        <rect>
+         <x>40</x>
+         <y>70</y>
+         <width>241</width>
+         <height>251</height>
+        </rect>
+       </property>
+       <property name="acceptDrops">
+        <bool>true</bool>
+       </property>
+       <property name="styleSheet">
+        <string notr="true"/>
+       </property>
+       <property name="frameShape">
+        <enum>QFrame::StyledPanel</enum>
+       </property>
+       <property name="frameShadow">
+        <enum>QFrame::Sunken</enum>
+       </property>
+       <property name="text">
+        <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;直接拖入图像&lt;/p&gt;&lt;p align=&quot;center&quot;&gt;(Ctrl+O)&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_result_1">
+       <property name="geometry">
+        <rect>
+         <x>390</x>
+         <y>70</y>
+         <width>241</width>
+         <height>251</height>
+        </rect>
+       </property>
+       <property name="frameShape">
+        <enum>QFrame::Box</enum>
+       </property>
+       <property name="frameShadow">
+        <enum>QFrame::Sunken</enum>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_output">
+       <property name="geometry">
+        <rect>
+         <x>310</x>
+         <y>170</y>
+         <width>54</width>
+         <height>51</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">image: url(:/pic/arrow-right.png);</string>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="runBtn_1">
+       <property name="geometry">
+        <rect>
+         <x>300</x>
+         <y>340</y>
+         <width>75</width>
+         <height>23</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>执行算法</string>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QFrame" name="frame_3">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>10</y>
+        <width>121</width>
+        <height>501</height>
+       </rect>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::Box</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Sunken</enum>
+      </property>
+      <property name="lineWidth">
+       <number>3</number>
+      </property>
+      <widget class="QToolBox" name="toolBox">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>10</y>
+         <width>101</width>
+         <height>111</height>
+        </rect>
+       </property>
+       <property name="toolTip">
+        <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;TNNR&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">font: 25 9pt &quot;Adobe 宋体 Std L&quot;;</string>
+       </property>
+       <property name="currentIndex">
+        <number>0</number>
+       </property>
+       <widget class="QWidget" name="tool_1">
+        <property name="geometry">
+         <rect>
+          <x>0</x>
+          <y>0</y>
+          <width>101</width>
+          <height>55</height>
+         </rect>
+        </property>
+        <attribute name="label">
+         <string>TNNR</string>
+        </attribute>
+        <widget class="QPushButton" name="ADMM">
+         <property name="geometry">
+          <rect>
+           <x>0</x>
+           <y>0</y>
+           <width>101</width>
+           <height>21</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>ADMM优化</string>
+         </property>
+        </widget>
+        <widget class="QPushButton" name="APGL">
+         <property name="geometry">
+          <rect>
+           <x>0</x>
+           <y>30</y>
+           <width>101</width>
+           <height>21</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>APGL优化</string>
+         </property>
+        </widget>
+       </widget>
+       <widget class="QWidget" name="tool_2">
+        <property name="geometry">
+         <rect>
+          <x>0</x>
+          <y>0</y>
+          <width>101</width>
+          <height>55</height>
+         </rect>
+        </property>
+        <attribute name="label">
+         <string>            ...</string>
+        </attribute>
+       </widget>
+      </widget>
+     </widget>
+     <widget class="QFrame" name="frame_4">
+      <property name="geometry">
+       <rect>
+        <x>160</x>
+        <y>440</y>
+        <width>671</width>
+        <height>121</height>
+       </rect>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::StyledPanel</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Raised</enum>
+      </property>
+      <widget class="QLabel" name="label_2">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>0</y>
+         <width>61</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="frameShape">
+        <enum>QFrame::WinPanel</enum>
+       </property>
+       <property name="text">
+        <string>算法简介</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_3">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>20</y>
+         <width>671</width>
+         <height>101</height>
+        </rect>
+       </property>
+       <property name="frameShape">
+        <enum>QFrame::WinPanel</enum>
+       </property>
+       <property name="text">
+        <string>**基于截断核范数的图像恢复算法**
+本算法采用截断核范数来逼近矩阵的秩，其中截断核范数为核范数减去少数最大的几个奇异值的和。从而提出了一种新的最小
+化截断核范数的矩阵补全算法，可以采用三种不同的迭代程序TNNR-ADMM、TNNR-APGL和TNNR-ADMMAP来解决优化问题</string>
+       </property>
+      </widget>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="page_2">
+     <widget class="QFrame" name="frame_5">
+      <property name="geometry">
+       <rect>
+        <x>160</x>
+        <y>20</y>
+        <width>671</width>
+        <height>391</height>
+       </rect>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::Box</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Plain</enum>
+      </property>
+      <widget class="QLabel" name="label_input_2">
+       <property name="geometry">
+        <rect>
+         <x>40</x>
+         <y>70</y>
+         <width>241</width>
+         <height>251</height>
+        </rect>
+       </property>
+       <property name="acceptDrops">
+        <bool>true</bool>
+       </property>
+       <property name="styleSheet">
+        <string notr="true"/>
+       </property>
+       <property name="frameShape">
+        <enum>QFrame::StyledPanel</enum>
+       </property>
+       <property name="frameShadow">
+        <enum>QFrame::Sunken</enum>
+       </property>
+       <property name="text">
+        <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;直接拖入图像&lt;/p&gt;&lt;p align=&quot;center&quot;&gt;(Ctrl+O)&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_result_2">
+       <property name="geometry">
+        <rect>
+         <x>390</x>
+         <y>70</y>
+         <width>241</width>
+         <height>251</height>
+        </rect>
+       </property>
+       <property name="frameShape">
+        <enum>QFrame::Box</enum>
+       </property>
+       <property name="frameShadow">
+        <enum>QFrame::Sunken</enum>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_output_2">
+       <property name="geometry">
+        <rect>
+         <x>310</x>
+         <y>170</y>
+         <width>54</width>
+         <height>51</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">image: url(:/pic/arrow-right.png);</string>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="runBtn_2">
+       <property name="geometry">
+        <rect>
+         <x>300</x>
+         <y>340</y>
+         <width>75</width>
+         <height>23</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>执行算法</string>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QFrame" name="frame_6">
+      <property name="geometry">
+       <rect>
+        <x>160</x>
+        <y>440</y>
+        <width>671</width>
+        <height>121</height>
+       </rect>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::StyledPanel</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Raised</enum>
+      </property>
+      <widget class="QLabel" name="label_9">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>0</y>
+         <width>61</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="frameShape">
+        <enum>QFrame::WinPanel</enum>
+       </property>
+       <property name="text">
+        <string>算法介绍</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_10">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>20</y>
+         <width>671</width>
+         <height>101</height>
+        </rect>
+       </property>
+       <property name="frameShape">
+        <enum>QFrame::WinPanel</enum>
+       </property>
+       <property name="text">
+        <string>**灰度图像**
+进行图像的灰度处理、分离各个通道并导出在红色通道、绿色通道、蓝色通道下的灰度图像。</string>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QRadioButton" name="radioButton">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>50</y>
+        <width>89</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>灰度图像</string>
+      </property>
+     </widget>
+     <widget class="QRadioButton" name="radioButton_2">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>90</y>
+        <width>89</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>红色通道</string>
+      </property>
+     </widget>
+     <widget class="QRadioButton" name="radioButton_3">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>130</y>
+        <width>89</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>绿色通道</string>
+      </property>
+     </widget>
+     <widget class="QRadioButton" name="radioButton_4">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>170</y>
+        <width>89</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>蓝色通道</string>
+      </property>
+     </widget>
+    </widget>
+   </widget>
+   <widget class="QFrame" name="frame">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>10</y>
+      <width>121</width>
+      <height>511</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"/>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::Box</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Raised</enum>
+    </property>
+    <widget class="QToolButton" name="taskBtn_1">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>10</y>
+       <width>81</width>
+       <height>81</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>...</string>
+     </property>
+    </widget>
+    <widget class="QToolButton" name="taskBtn_2">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>110</y>
+       <width>81</width>
+       <height>81</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>...</string>
+     </property>
+    </widget>
+    <widget class="QToolButton" name="taskBtn_3">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>210</y>
+       <width>81</width>
+       <height>81</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>...</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QPushButton" name="closeBtn">
+    <property name="geometry">
+     <rect>
+      <x>1010</x>
+      <y>650</y>
+      <width>75</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>退出</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menuBar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1154</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menu">
+    <property name="title">
+     <string>文件</string>
+    </property>
+    <widget class="QMenu" name="recent_menu">
+     <property name="title">
+      <string>打开最近</string>
+     </property>
+     <addaction name="useless"/>
+    </widget>
+    <addaction name="add_file"/>
+    <addaction name="save_file"/>
+    <addaction name="recent_menu"/>
+    <addaction name="quit"/>
+   </widget>
+   <widget class="QMenu" name="menu_2">
+    <property name="title">
+     <string>帮助</string>
+    </property>
+    <addaction name="help"/>
+    <addaction name="question"/>
+   </widget>
+   <widget class="QMenu" name="menu_3">
+    <property name="title">
+     <string>关于</string>
+    </property>
+    <addaction name="about_us"/>
+    <addaction name="about_QT"/>
+   </widget>
+   <addaction name="menu"/>
+   <addaction name="menu_2"/>
+   <addaction name="menu_3"/>
+  </widget>
+  <widget class="QToolBar" name="mainToolBar">
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+  </widget>
+  <widget class="QStatusBar" name="statusBar"/>
+  <action name="help">
+   <property name="icon">
+    <iconset resource="img.qrc">
+     <normaloff>:/pic/help.png</normaloff>:/pic/help.png</iconset>
+   </property>
+   <property name="text">
+    <string>使用手册</string>
+   </property>
+  </action>
+  <action name="question">
+   <property name="icon">
+    <iconset resource="img.qrc">
+     <normaloff>:/pic/question.png</normaloff>:/pic/question.png</iconset>
+   </property>
+   <property name="text">
+    <string>问题反馈</string>
+   </property>
+  </action>
+  <action name="about_us">
+   <property name="icon">
+    <iconset resource="img.qrc">
+     <normaloff>:/pic/about.png</normaloff>:/pic/about.png</iconset>
+   </property>
+   <property name="text">
+    <string>关于软件</string>
+   </property>
+  </action>
+  <action name="about_QT">
+   <property name="icon">
+    <iconset resource="img.qrc">
+     <normaloff>:/pic/qt.png</normaloff>:/pic/qt.png</iconset>
+   </property>
+   <property name="text">
+    <string> 关于QT</string>
+   </property>
+  </action>
+  <action name="save_file">
+   <property name="icon">
+    <iconset resource="img.qrc">
+     <normaloff>:/pic/save.png</normaloff>:/pic/save.png</iconset>
+   </property>
+   <property name="text">
+    <string>保存文件</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+S</string>
+   </property>
+  </action>
+  <action name="quit">
+   <property name="icon">
+    <iconset resource="img.qrc">
+     <normaloff>:/pic/quit.png</normaloff>:/pic/quit.png</iconset>
+   </property>
+   <property name="text">
+    <string>退出</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+Q</string>
+   </property>
+  </action>
+  <action name="add_file">
+   <property name="icon">
+    <iconset resource="img.qrc">
+     <normaloff>:/pic/file-add.png</normaloff>:/pic/file-add.png</iconset>
+   </property>
+   <property name="text">
+    <string>导入图片</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+O</string>
+   </property>
+  </action>
+  <action name="useless">
+   <property name="text">
+    <string>recent files:</string>
+   </property>
+  </action>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources>
+  <include location="img.qrc"/>
+ </resources>
+ <connections/>
+</ui>

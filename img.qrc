@@ -1,0 +1,26 @@
+<RCC>
+    <qresource prefix="/">
+        <file>pic/about.png</file>
+        <file>pic/add_pic.png</file>
+        <file>pic/arrow-right.png</file>
+        <file>pic/export.png</file>
+        <file>pic/file-add.png</file>
+        <file>pic/file-delete.png</file>
+        <file>pic/help.png</file>
+        <file>pic/img_next.png</file>
+        <file>pic/img_origin.png</file>
+        <file>pic/lena.png</file>
+        <file>pic/loading.png</file>
+        <file>pic/logo.png</file>
+        <file>pic/picture.png</file>
+        <file>pic/qt.png</file>
+        <file>pic/question.png</file>
+        <file>pic/quit.png</file>
+        <file>pic/save.png</file>
+        <file>pic/select.png</file>
+        <file>pic/task_1.png</file>
+        <file>pic/task_2.png</file>
+        <file>pic/task_3.png</file>
+        <file>pic/启动.png</file>
+    </qresource>
+</RCC>
