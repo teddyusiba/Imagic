@@ -65,8 +65,6 @@ private slots:
 
     void on_radioButton_4_clicked();
 
-    void on_runBtn_2_clicked();
-
 private:
 
     Ui::MainWindow *ui;

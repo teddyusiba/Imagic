@@ -43,3 +43,8 @@ FORMS += \
 
 RESOURCES += \
     img.qrc
+
+DISTFILES += \
+    logo.rc
+
+RC_FILE += logo.rc
