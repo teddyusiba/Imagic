@@ -1,6 +1,6 @@
 # 欢迎使用Imagic(正在开发中)！
 
-
+![启动](https://github.com/teddyusiba/Imagic/blob/06c16245dd2a051ac0da399438da17dff012f356/pic/%E5%90%AF%E5%8A%A8.png)
 
 ## 简单介绍
 
